@@ -1,0 +1,51 @@
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Base styles for the product container */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+  gap: 20px; /* Space between elements */
+  padding: 10px;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+/* Responsive styles */
+
+/* Medium screens (tablets and up) - 3 columns */
+@media (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 elements per line for medium screens */
+  }
+}
+
+/* Small screens (mobile landscape and up) - 2 columns */
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 elements per line for smaller screens */
+  }
+}
+
+/* Extra small screens (phones) - 1 column */
+@media (max-width: 480px) {
+  .product-container {
+    grid-template-columns: 1fr; /* 1 element per line for very small screens */
+  }
+}
+
