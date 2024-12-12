@@ -13,4 +13,4 @@ you will see
 3. responsive design
 4. loading message while fetching data
 
-you will find a screen of my work in th assets file 
+you will find a screen of my work in th assets folder
